@@ -1,2 +1,79 @@
 @import "tailwindcss";
 
+
+@layer base {
+  :root {
+    --background: #0b0b0b;
+    --surface: #1a1a1a;
+    --surface-light: #2d2d2d;
+    --surface-lighter: #404040;
+    --text-primary: #ffffff;
+    --text-secondary: #b3b3b3;
+    --accent-gold: #c4a962;
+    --accent-gold-light: #d4b97a;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--text-primary);
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02";
+  }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Custom selection color */
+  ::selection {
+    background: var(--accent-gold);
+    color: var(--background);
+  }
+}
+
+@layer utilities {
+  .text-gold {
+    color: var(--accent-gold);
+  }
+  
+  .bg-gold {
+    background-color: var(--accent-gold);
+  }
+  
+  .border-gold {
+    border-color: var(--accent-gold);
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+
+  .animate-glow {
+    animation: glow 3s ease-in-out infinite;
+  }
+
+  @keyframes glow {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 0.8; }
+  }
+
+  .bg-grid-pattern {
+    background-image: 
+      linear-gradient(rgba(196, 169, 98, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(196, 169, 98, 0.05) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+
+  .text-shadow-gold {
+    text-shadow: 0 0 10px rgba(196, 169, 98, 0.3);
+  }
+
+  .shadow-gold {
+    box-shadow: 0 4px 20px -8px rgba(196, 169, 98, 0.3);
+  }
+}
