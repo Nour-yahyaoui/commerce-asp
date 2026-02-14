@@ -68,8 +68,8 @@ export default function CollectionsClient({ initialCollections }: CollectionsCli
               <span className="text-sm uppercase tracking-[0.3em] text-[#c4a962] font-medium">
                 Curated Selections
               </span>
-              <h1 className="text-5xl md:text-6xl font-light text-white mt-2">
-                Our<span className="font-bold text-[#c4a962] ml-3">Collections</span>
+              <h1 className="text-5xl sm:text-2xl md:text-6xl font-light text-white mt-2 ">
+                Our<span className="font-bold text-[#c4a962] ml-3"><br className='hidden sm:block' />Collections</span>
               </h1>
             </div>
           </div>

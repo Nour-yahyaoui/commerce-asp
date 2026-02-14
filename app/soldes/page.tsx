@@ -49,7 +49,7 @@ export default async function SoldesPage() {
                 <span className="text-sm uppercase tracking-[0.3em] text-[#c4a962] font-medium">
                   Special Offers
                 </span>
-                <h1 className="text-5xl md:text-6xl font-light text-white mt-2">
+                <h1 className="text-5xl sm:text-2xl md:text-6xl font-light text-white mt-2">
                   Active<span className="font-bold text-[#c4a962] ml-3">Sales</span>
                 </h1>
               </div>

@@ -66,7 +66,7 @@ export default function OffersClient({ initialOffers }: OffersClientProps) {
                   <span className="text-sm uppercase tracking-[0.3em] text-[#c4a962] font-medium">
                     Limited Time
                   </span>
-                  <h1 className="text-5xl md:text-6xl font-light text-white mt-2">
+                  <h1 className="text-5xl sm:text-2xl md:text-6xl font-light text-white mt-2">
                     Weekly<span className="font-bold text-[#c4a962] ml-3">Offers</span>
                   </h1>
                 </div>
